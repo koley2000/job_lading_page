@@ -12,7 +12,7 @@ function Card(props) {
                         <button className="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i className="fa-solid fa-ellipsis-vertical"></i>
                         </button>
-                        <ul className="dropdown-menu">
+                        <ul className="dropdown-menu position-absolute">
                             <li><a className="dropdown-item" href="/">View</a></li>
                             <li><a className="dropdown-item" href="/">Edit</a></li>
                             <li><a className="dropdown-item" href="/">Close Job</a></li>

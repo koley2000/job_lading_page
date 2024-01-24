@@ -3,7 +3,7 @@ import jobContext from '../context/jobContext';
 
 function Form() {
 
-  const [step, setStep] = useState(1);
+  
   const [formData, setFormData] = useState({
     position: "", company_name: "", job_pipeline: "",
     add_location: "", experience: "", min_salary: "", max_salary: "", skills_required: "",
@@ -11,10 +11,6 @@ function Form() {
   });
   const context = useContext(jobContext);
   const { addJob } = context;
-
-  const handleNext = () => {
-    setStep(step + 1);
-  }
 
   const handleInputChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
