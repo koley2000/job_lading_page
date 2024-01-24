@@ -1,9 +1,9 @@
 import React, { useContext, useState } from 'react'
 import jobContext from '../context/jobContext';
+import '../styles/form.css' 
 
 function Form() {
 
-  
   const [formData, setFormData] = useState({
     position: "", company_name: "", job_pipeline: "",
     add_location: "", experience: "", min_salary: "", max_salary: "", skills_required: "",
