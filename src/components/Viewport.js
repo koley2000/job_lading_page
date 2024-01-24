@@ -15,7 +15,7 @@ function Viewport() {
 
     return (
         <>
-            <div className='d-flex justify-content-between pt-4'>
+            <div className='d-flex justify-content-between py-4'>
                 <p id='title'>Active Jobs</p>
                 <div className='side-option'>
                     <button type="button" className="btn btn-light me-2" id='switch'><div className="form-check form-switch">Active
@@ -56,7 +56,7 @@ function Viewport() {
             <div className='row'>
                 {jobs?.map((job) => {
                     return (
-                        (<div className='col-2 mx-3 my-5'>
+                        (<div className='col-2 mx-4 my-3'>
                             <Card key={job._id} job={job} />
                         </div>)
                     )

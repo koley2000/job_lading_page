@@ -22,7 +22,7 @@ function Card(props) {
                 <div className='pt-3'>
                     <p className="card-text"><i className="fa-solid fa-location-dot pe-2" style={{ color: '#1C212D' }}></i>{job.add_location}</p>
                     <p className="card-text"><i className="fa-solid fa-tag pe-2" style={{ color: '#1C212D' }}></i>{job.min_salary}</p>
-                    <p className="card-text"><i className="fa-solid fa-business-time pe-2" style={{ color: '#1C212D' }}></i>2 years</p>
+                    <p className="card-text"><i className="fa-solid fa-business-time pe-2" style={{ color: '#1C212D' }}></i>{job.experience} Years</p>
                 </div>
             </div>
         </div>
