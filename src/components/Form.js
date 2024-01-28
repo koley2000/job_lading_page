@@ -78,7 +78,6 @@ function Form() {
           <textarea className="form-control" id="exampleFormControlTextarea1" name='intern_responsibilites' value={formData.intern_responsibilites} onChange={handleInputChange} rows="3"></textarea>
         </div>
 
-
         <button className="btn btn-dark my-3" type="submit">
           Submit
         </button>

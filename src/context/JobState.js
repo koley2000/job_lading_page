@@ -78,7 +78,7 @@ const JobState = (props) => {
                 'Content-Type': 'application/json',
             }
         });
-        const newJobs = jobs((job) => { return job._id !== id });
+        const newJobs = jobs.filter((job) => { return job._id !== id });
         setJobs(newJobs)
     }
 
