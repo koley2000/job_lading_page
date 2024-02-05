@@ -1,11 +1,13 @@
 import React, { useContext, useState } from 'react'
 import ViewModal from './ViewModal';
 import jobContext from '../context/jobContext'
+import UpdateForm from './UpdateForm';
 
 
 function Card(props) {
     const { job } = props
     const [show, setShow] = useState(false);
+    const [eshow, esetShow] = useState(false);
 
     const context = useContext(jobContext);
     const {  deleteJob } = context;
@@ -22,7 +24,8 @@ function Card(props) {
                         <ul className="dropdown-menu position-absolute">
                             <li><button className="dropdown-item" onClick={() => setShow(true)}>View</button>
                                 <ViewModal show={show} handleClose={() => setShow(false)} jobDel={job} /></li>
-                            <li><button className="dropdown-item">Edit</button></li>
+                            <li><button className="dropdown-item" onClick={() => esetShow(true)}>Edit</button>
+                                 <UpdateForm eshow={eshow} ehandleClose={() => esetShow(false)} jobDel={job}/></li>
                             <li><button className="dropdown-item" onClick={() => deleteJob(job._id)}>Close Job</button></li>
                         </ul>
                     </div>
